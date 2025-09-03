@@ -9,7 +9,9 @@
       href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/general.css" />
+
+    <link rel="stylesheet" href="css/styles.css" />
     <title>FocusFlow</title>
   </head>
   <header class="header">
@@ -29,21 +31,362 @@
           <a href="#section--3" class="nav_link">Take a quiz</a>
         </li>
         <li class="nav_item">
-          <a href="#section--4" class="nav_link">Open Account</a>
+          <a href="#section--4" class="nav_link btn">Open Account</a>
         </li>
       </ul>
     </nav>
     <div class="header-title">
-      <div>
-        <h1>
-          <span class="highlight">Organizing</span> plans means
-          <span class="highlight">enhancing</span> focus
+      <div class="container">
+        <h1 class="header_heading">
+          <span class="highlight">Organizing</span> plans means enhancing
+          <span class="highlight">focus</span>
         </h1>
-        <p>All in one app saves you time and improves productivity.</p>
+        <p class="header-paragraph">
+          All in one app saves you time and improves productivity.
+        </p>
+        <button class="btn--text">Learn more &DownArrow;</button>
       </div>
       <img src="img/hero.jpg" alt="hero image" class="header_img" />
     </div>
   </header>
 
-  <body></body>
+  <body>
+    <section class="section" id="section--1">
+      <div class="section-title">
+        <h2 class="section-heading">Features</h2>
+        <p class="section-paragraph">
+          FocusFlow is a productivity app that helps you organize your tasks,
+          set goals, and manage your time effectively.
+        </p>
+      </div>
+      <div class="features">
+        <div class="features__tab-container">
+          <button
+            class="btn features__tab features__tab--1 features__tab--active"
+            data-tab="1"
+          >
+            <span>01</span> Pomodoro
+          </button>
+          <button class="btn features__tab features__tab--2" data-tab="2">
+            <span>02</span> To-Do List
+          </button>
+          <button class="btn features__tab features__tab--3" data-tab="3">
+            <span>03</span> Goal Setting
+          </button>
+        </div>
+        <div
+          class="features__content features__content--1 features__content--active"
+        >
+          <div class="features__icon features__icon--1">
+            <ion-icon name="alarm-outline" class="icon"></ion-icon>
+          </div>
+          <h5 class="features__header">
+            Manage your focus sessions with pomodoro
+          </h5>
+
+          <p class="features__paragraph">
+            The Pomodoro Technique is a time management method that uses a timer
+            to break work into intervals, traditionally 25 minutes in length,
+            separated by short breaks. This technique helps improve focus and
+            productivity by encouraging sustained periods of work followed by
+            rest.
+          </p>
+        </div>
+
+        <div class="features__content features__content--2">
+          <div class="features__icon features__icon--1">
+            <ion-icon name="checkbox-outline"></ion-icon>
+          </div>
+          <h5 class="features__header">Organize your tasks with to-do list</h5>
+          <p class="features__paragraph">
+            A to-do list is a simple yet effective tool for organizing tasks and
+            managing time. It helps prioritize activities, track progress, and
+            reduce stress by providing a clear overview of what needs to be
+            accomplished.
+          </p>
+        </div>
+
+        <div class="features__content features__content--3">
+          <div class="features__icon features__icon--1">
+            <ion-icon name="trophy-outline"></ion-icon>
+          </div>
+          <h5 class="features__header">Set and achieve your goals</h5>
+          <p class="features__paragraph">
+            Goal setting is the process of identifying specific, measurable,
+            achievable, relevant, and time-bound objectives. It helps provide
+            direction, motivation, and a sense of purpose, ultimately leading to
+            personal and professional growth.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="section--2">
+      <div class="section-title">
+        <div class="flex-container">
+          <h2 class="section-heading">Techniques</h2>
+          <p class="section-paragraph">
+            Here are some techniques to boost your productivity and focus.
+          </p>
+        </div>
+      </div>
+      <div class="slider">
+        <div class="slide slide--1">
+          <div class="slide__content">
+            <h5 class="techniques__header">Active Recall</h5>
+            <p class="techniques__paragraph">
+              Active Recall is a study technique that involves actively
+              retrieving information from memory rather than passively reviewing
+              it. This method enhances long-term retention and understanding by
+              engaging the brain in the learning process, making it more
+              effective than traditional study methods.
+            </p>
+          </div>
+        </div>
+
+        <div class="slide slide--2">
+          <div class="slide__content">
+            <h5 class="techniques__header">The Two-Minute Rule</h5>
+            <p class="techniques__paragraph">
+              The Two-Minute Rule is a productivity technique that suggests if a
+              task can be completed in two minutes or less, it should be done
+              immediately. This approach helps to quickly tackle small tasks,
+              reduce procrastination, and maintain momentum throughout the day.
+            </p>
+          </div>
+        </div>
+
+        <div class="slide slide--3">
+          <div class="slide__content">
+            <h5 class="techniques__header">Time Blocking</h5>
+            <p class="techniques__paragraph">
+              Time Blocking is a time management technique that involves
+              dividing your day into distinct blocks of time, each dedicated to
+              a specific task or activity. This method helps improve focus,
+              reduce distractions, and increase productivity by allocating
+              focused periods for work, breaks, and personal activities.
+            </p>
+          </div>
+        </div>
+
+        <div class="slide slide--4">
+          <div class="slide__content">
+            <h5 class="techniques__header">The Eisenhower Matrix</h5>
+            <p class="techniques__paragraph">
+              The Eisenhower Matrix is a time management tool that helps
+              prioritize tasks based on their urgency and importance. It
+              categorizes tasks into four quadrants: urgent and important,
+              important but not urgent, urgent but not important, and neither
+              urgent nor important. This method aids in effective
+              decision-making and enhances productivity by focusing on
+              high-priority activities.
+            </p>
+          </div>
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+    <section class="section" id="section--3">
+      <div class="section-title">
+        <h2 class="section-heading">Take a quiz</h2>
+        <p class="section-paragraph">
+          Take a quiz to find out which productivity technique suits you best.
+        </p>
+      </div>
+      <form action="BE/be.php" method="POST">
+        <div class="quiz-container">
+          <div class="quiz-question">
+            <p class="question">
+              <strong>1. How do you usually prepare for an exam?</strong>
+            </p>
+            <label
+              ><input type="radio" name="q1" value="Leitner" required /> I
+              review by testing myself</label
+            ><br />
+            <label
+              ><input type="radio" name="q1" value="Feynman" /> I try to explain
+              things out loud</label
+            ><br />
+            <label
+              ><input type="radio" name="q1" value="PQ4R" /> I reread notes in
+              small chunks</label
+            ><br />
+            <label
+              ><input type="radio" name="q1" value="Pomodoro" /> I use a timer
+              to stay focused</label
+            >
+          </div>
+
+          <div class="quiz-question">
+            <p class="question">
+              <strong>2. What’s your biggest study struggle?</strong>
+            </p>
+            <label
+              ><input type="radio" name="q2" value="Pomodoro" required />
+              Staying focused for long</label
+            ><br />
+            <label
+              ><input type="radio" name="q2" value="Leitner" /> Forgetting what
+              I reviewed too fast</label
+            ><br />
+            <label
+              ><input type="radio" name="q2" value="Feynman" /> Not really
+              understanding the material</label
+            ><br />
+            <label
+              ><input type="radio" name="q2" value="PQ4R" /> Losing track of
+              structure</label
+            >
+          </div>
+
+          <div class="quiz-question">
+            <p class="question">
+              <strong>3. What does your ideal study session look like?</strong>
+            </p>
+            <label
+              ><input type="radio" name="q3" value="Pomodoro" required /> Short
+              timed bursts with breaks</label
+            ><br />
+            <label
+              ><input type="radio" name="q3" value="Leitner" /> Quizzing myself
+              with flashcards</label
+            ><br />
+            <label
+              ><input type="radio" name="q3" value="PQ4R" /> Reading actively
+              and taking notes</label
+            ><br />
+            <label
+              ><input type="radio" name="q3" value="Feynman" /> Talking through
+              the topic or explaining it aloud</label
+            >
+          </div>
+
+          <div class="quiz-question">
+            <p class="question">
+              <strong>4. What’s your main study goal?</strong>
+            </p>
+            <label
+              ><input type="radio" name="q4" value="Leitner" required /> Build
+              long-term memory</label
+            ><br />
+            <label
+              ><input type="radio" name="q4" value="Feynman" /> Understand
+              complex topics deeply</label
+            ><br />
+            <label
+              ><input type="radio" name="q4" value="Pomodoro" /> Stay productive
+              and avoid burnout</label
+            ><br />
+            <label
+              ><input type="radio" name="q4" value="PQ4R" /> Read smarter and
+              stay organized</label
+            >
+          </div>
+
+          <div class="quiz-question">
+            <p class="question">
+              <strong
+                >5. Which of these study habits sounds most like you?</strong
+              >
+            </p>
+            <label
+              ><input type="radio" name="q5" value="Pomodoro" required /> I love
+              using timers to stay accountable</label
+            ><br />
+            <label
+              ><input type="radio" name="q5" value="Leitner" /> I like breaking
+              topics into questions</label
+            ><br />
+            <label
+              ><input type="radio" name="q5" value="PQ4R" /> I tend to follow a
+              step-by-step process</label
+            ><br />
+            <label
+              ><input type="radio" name="q5" value="Feynman" /> I naturally
+              teach others or talk to myself when learning</label
+            >
+          </div>
+
+          <div class="quiz-question">
+            <p class="question">
+              <strong>6. What kind of materials do you usually study?</strong>
+            </p>
+            <label
+              ><input type="radio" name="q6" value="Feynman" required />
+              Concept-heavy subjects that require deep understanding</label
+            ><br />
+            <label
+              ><input type="radio" name="q6" value="Leitner" /> Lots of
+              definitions and terms to memorize</label
+            ><br />
+            <label
+              ><input type="radio" name="q6" value="PQ4R" /> Long readings with
+              complex structure</label
+            ><br />
+            <label
+              ><input type="radio" name="q6" value="Pomodoro" /> Anything — I
+              just need help staying focused</label
+            >
+          </div>
+          <button type="submit" class="btn">Get My Result</button>
+        </div>
+      </form>
+    </section>
+    <section class="section last" id="section--4">
+      <div class="section-title">
+        <h2 class="section-heading">Get Started</h2>
+        <p class="section-paragraph">
+          Create an account to start organizing your tasks and boosting your
+          productivity.
+        </p>
+        <button class="btn btn--open-modal">Open Account</button>
+      </div>
+    </section>
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a href="https://github.com/khatia-turm" class="footer__link">Github</a>
+        </li>
+        <li class="footer__item">
+          <a href="https://www.linkedin.com/in/khatia-turmanidze-47b2b9349/" class="footer__link">LinkedIn</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Portfolio</a> </li>
+       
+       </ul>
+      <p class="footer__copyright">
+        &copy; 2024 by Khatia Turmanidze. All rights reserved.
+    </footer>
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Open Account to save your <span class="highlight">progress</span>
+        <br />
+        in just <span class="highlight">5 minutes</span>
+      </h2>
+      <form class="modal__form">
+        <label>First Name
+        <input type="text" /><br/>
+        <label>Last Name 
+        <input type="text" /><br/>
+        <label>Email Address
+        <input type="email" /><br/>
+        <button class="btn" type="button">Next step &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>

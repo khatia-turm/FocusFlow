@@ -1,0 +1,140 @@
+:root {
+  --color-primary: #e15d5d;
+  --color-secondary: #f3d58a;
+  --color-tertiary: #e67e73;
+  --color-primary-darker: #c24e4e;
+  --color-secondary-darker: #d4b256;
+  --color-tertiary-darker: #c96a5f;
+  --color-primary-opacity: #4a9f953a;
+  --color-secondary-opacity: #f0c86231;
+  --color-tertiary-opacity: #e67e732d;
+  --gradient-primary: linear-gradient(to top left, #d8893b, #e15d5d);
+  --gradient-secondary: linear-gradient(to top left, #ffb003, #ffcb03);
+}
+
+/* :root {
+  --color-primary: #5b6bf0;
+  --color-secondary: #43c8f5;
+  --color-tertiary: #a35bf0;
+  --color-primary-darker: #4956c0;
+  --color-secondary-darker: #36a0c4;
+  --color-tertiary-darker: #8249c0;
+  --color-primary-opacity: #5b6bf03a;
+  --color-secondary-opacity: #43c8f531;
+  --color-tertiary-opacity: #a35bf02d;
+  --gradient-primary: linear-gradient(to top left, #4956c0, #43c8f5);
+  --gradient-secondary: linear-gradient(to top left, #36a0c4, #43c8f5);
+} */
+/* 
+:root {
+  --color-primary: #e47c4b;
+  --color-secondary: #5ec576;
+  --color-tertiary: #6b77c9;
+  --color-primary-darker: #b6633c;
+  --color-secondary-darker: #4bbb7d;
+  --color-tertiary-darker: #565fa1;
+  --color-primary-opacity: #e47c4b3a;
+  --color-secondary-opacity: #5ec5763a;
+  --color-tertiary-opacity: #6b77c92d;
+  --gradient-primary: linear-gradient(to top left, #b6633c, #5ec576);
+  --gradient-secondary: linear-gradient(to top left, #4bbb7d, #5ec576);
+}
+ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  background-color: #f4f4f4;
+  line-height: 1.9;
+  color: #5f5f5f;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 3.4rem;
+  line-height: 1.35;
+}
+
+h4 {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+/* two types of buttons*/
+
+.btn--text {
+  background-color: inherit;
+  border: none;
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.btn--text:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--color-primary-darker);
+  transition: all 0.3s ease;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--color-primary);
+  border-radius: 10rem;
+  padding: 0.7rem 1em;
+  color: #444;
+  border: none;
+}
+
+.btn:hover {
+  background-color: var(--color-primary-darker);
+  transition: all 1s ease;
+}
+
+/* general section elements */
+
+.section {
+  padding: 15rem 3rem;
+  border-bottom: 1px solid #ddd;
+
+  transition: transform 1s, opacity 1s;
+}
+
+.section-title {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem;
+}
+.section-heading {
+  font-size: 1rem;
+  color: var(--color-primary);
+}
+
+.section-paragraph {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.flex-container {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}
