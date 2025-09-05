@@ -102,6 +102,7 @@ h4 {
 .btn:hover {
   background-color: var(--color-primary-darker);
   transition: all 1s ease;
+  cursor: pointer;
 }
 
 /* general section elements */
