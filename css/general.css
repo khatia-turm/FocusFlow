@@ -109,7 +109,7 @@ h4 {
 
 .section {
   padding: 15rem 3rem;
-  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
 
   transition: transform 1s, opacity 1s;
 }
@@ -123,6 +123,11 @@ h4 {
 .section-heading {
   font-size: 1rem;
   color: var(--color-primary);
+}
+
+.section-hidden {
+  opacity: 0;
+  transform: translateY(8rem);
 }
 
 .section-paragraph {

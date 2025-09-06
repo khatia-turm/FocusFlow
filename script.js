@@ -54,6 +54,64 @@ tabsContainer.addEventListener("click", function (e) {
 //   }
 // });
 
+// menu fade animation
+
+const navHover = function (e) {
+  if (e.target.classList.contains("nav_link")) {
+    const link = e.target;
+    const siblings = link.closest(".nav").querySelectorAll(".nav_link");
+    const logo = link.closest(".nav").querySelector(".logo");
+    siblings.forEach((el) => {
+      if (el !== link) el.style.opacity = this;
+    });
+    if (logo) logo.style.opacity = this;
+  }
+};
+
+const nav = document.querySelector(".nav");
+nav.addEventListener("mouseover", navHover.bind(0.5));
+nav.addEventListener("mouseout", navHover.bind(1));
+
+// revealing sections
+
+const allSections = document.querySelectorAll(".section");
+
+const revealSection = function (entries, observer) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) return;
+    entry.target.classList.remove("section-hidden");
+    observer.unobserve(entry.target);
+  });
+};
+
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.15,
+});
+
+allSections.forEach((section) => {
+  sectionObserver.observe(section);
+  section.classList.add("section-hidden");
+});
+
+// SLIDER
+
+// sticky nav
+const header = document.querySelector(".header");
+const navHeight = nav.getBoundingClientRect().height;
+const stickyNav = function (entries) {
+  const [entry] = entries;
+  if (!entry.isIntersecting) nav.classList.add("sticky");
+  else nav.classList.remove("sticky");
+};
+
+const headerObserver = new IntersectionObserver(stickyNav, {
+  root: null,
+  threshold: 0,
+  rootMargin: `-${navHeight}px`,
+});
+headerObserver.observe(header);
+
 // opening modal
 const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");

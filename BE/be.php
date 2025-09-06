@@ -50,6 +50,8 @@ if (isset($_FILES['upload']) && $_FILES['upload']['error'] === UPLOAD_ERR_OK) {
 }
 ?>
 
+
+<!-- THIS IS HTML  -->
 <!DOCTYPE html>
 <html lang="en">
 
