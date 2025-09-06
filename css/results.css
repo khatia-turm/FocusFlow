@@ -30,7 +30,7 @@
   margin-bottom: 1rem;
 }
 
-body {
+.result-body {
   font-family: "Poppins", sans-serif;
   background-color: #fdf5f4;
   color: #464646;
@@ -39,7 +39,7 @@ body {
   margin: 0;
 }
 
-.container {
+.result-container {
   max-width: 800px;
   margin: 2rem auto;
   padding: 2rem;
@@ -48,7 +48,7 @@ body {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
+.result-heading {
   color: var(--dark);
   font-family: "Playfair Display", serif;
   font-size: 2.5rem;
@@ -56,7 +56,7 @@ h1 {
   text-align: center;
 }
 
-h2 {
+.result-subheading {
   color: var(--dark);
   font-family: "Playfair Display", serif;
   border-bottom: 2px solid var(--dark);
@@ -107,7 +107,7 @@ pre {
     padding: 1rem;
   }
 
-  h1 {
+  .result-heading {
     font-size: 2rem;
   }
 }

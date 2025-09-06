@@ -64,18 +64,18 @@ if (isset($_FILES['upload']) && $_FILES['upload']['error'] === UPLOAD_ERR_OK) {
   <link rel="icon" href="/images/Untitled.PNG" type="image/icon">
 </head>
 
-<body>
-  <div class="container result-container">
+<body class="result-body">
+  <div class="result-container result-container">
     <header>
-      <h1>Your Study Method Recommendation</h1>
+      <h1 class="result-heading">Your Study Method Recommendation</h1>
     </header>
 
     <main>
       <section class="result-section">
-        <h2>Your dominant study method is: <span class="method-highlight"><?= htmlspecialchars($best_method) ?></span></h2>
+        <h2 class="result-subheading">Your dominant study method is: <span class="method-highlight"><?= htmlspecialchars($best_method) ?></span></h2>
 
         <div class="result-details">
-          <h2>Your answers:</h2>
+          <h2 class="result-subheading">Your answers:</h2>
           <div class="answers-box">
             <pre><?= htmlspecialchars($result_str) ?></pre>
           </div>
