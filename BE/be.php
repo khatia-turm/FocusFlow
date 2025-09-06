@@ -87,10 +87,6 @@ if (isset($_FILES['upload']) && $_FILES['upload']['error'] === UPLOAD_ERR_OK) {
           </div>
         <?php endif; ?>
 
-        <div class="action-buttons">
-          <a href="index.html" class="btn">Back to Home</a>
-          <a href="#<?= strtolower($best_method) ?>" class="btn">Learn More About <?= $best_method ?></a>
-        </div>
       </section>
     </main>
   </div>
