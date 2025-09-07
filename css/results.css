@@ -1,0 +1,113 @@
+:root {
+  --color-primary: #e15d5d;
+  --color-secondary: #f3d58a;
+  --color-tertiary: #e67e73;
+  --color-primary-darker: #c24e4e;
+  --color-secondary-darker: #d4b256;
+  --color-tertiary-darker: #c96a5f;
+  --color-primary-opacity: #e15d5d3a;
+  --color-secondary-opacity: #f0c86231;
+  --color-tertiary-opacity: #e67e732d;
+  --gradient-primary: linear-gradient(to top left, #d8893b, #e15d5d);
+  --gradient-secondary: linear-gradient(to top left, #ffb003, #ffcb03);
+}
+
+.method-Pomodoro {
+  color: var(--color-primary);
+}
+.method-Leitner {
+  color: var(--color-primary-darker);
+}
+.method-Feynman {
+  color: var(--color-secondary);
+}
+.method-PQ4R {
+  color: var(--color-tertiary-darker);
+}
+
+.method-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.result-body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fdf5f4;
+  color: #464646;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+}
+
+.result-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.result-heading {
+  color: var(--dark);
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.result-subheading {
+  color: var(--dark);
+  font-family: "Playfair Display", serif;
+  border-bottom: 2px solid var(--dark);
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+
+pre {
+  background-color: #f8f8f8;
+  padding: 1.5rem;
+  border-radius: 5px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: "Poppins", sans-serif;
+}
+
+.upload-info {
+  background-color: var(--medium);
+  padding: 1rem;
+  border-radius: 5px;
+  margin-top: 1.5rem;
+}
+
+.method-highlight {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--dark);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.result-container {
+  animation: fadeIn 0.8s ease-out;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .result-heading {
+    font-size: 2rem;
+  }
+}
